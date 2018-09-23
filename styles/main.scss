@@ -1,0 +1,15 @@
+@import '../styles/vendors/bootstrap/scss/bootstrap.scss';
+@import '../styles/vendors/font-awesome/scss/fontawesome.scss';
+@import '../styles/vendors/font-awesome/scss/solid.scss';
+@import '../styles/vendors/font-awesome/scss/regular.scss';
+@import '../styles/vendors/font-awesome/scss/brands.scss';
+
+@import '../styles/base/normalize';
+
+@import '../styles/layout/header';
+@import '../styles/layout/footer';
+@import '../styles/layout/grid';
+
+@import '../styles/components/howitworks';
+@import '../styles/components/banner';
+@import '../styles/components/event-card';

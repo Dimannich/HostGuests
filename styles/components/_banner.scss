@@ -1,0 +1,23 @@
+.banner {
+    height: 70vh;
+    background: url('../assets/img/bg-holder.jpg') no-repeat;
+    background-size: cover;
+    position: relative;
+
+    &__header-block {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+    }
+    
+    &::before {
+        background-color: rgba(0, 0, 0, 0.37);
+        content: '';
+        display: block;
+        height: 100%;
+        position: absolute;
+        width: 100%;
+    }
+}
