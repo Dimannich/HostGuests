@@ -1,0 +1,22 @@
+#carouselExampleIndicators .list-inline {
+    white-space:nowrap;
+    overflow-x:auto;
+}
+
+#carouselExampleIndicators .carousel-indicators {
+    position: static;
+    margin: 0;
+    height: 160px;
+    display: block;
+}
+
+#carouselExampleIndicators .carousel-indicators > li {
+    width: 200px;
+    // height: initial;
+    text-indent: initial;
+    margin: 0 4px;
+}
+
+#carouselExampleIndicators .carousel-indicators > li.active img {
+    opacity: 0.5;
+}
