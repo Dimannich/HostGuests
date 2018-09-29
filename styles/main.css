@@ -14603,6 +14603,10 @@ main {
   padding-top: 50px;
 }
 
+#map {
+  height: 60vh;
+}
+
 .how-it-works__image {
   width: 100px;
 }

@@ -45,7 +45,52 @@
         <section class="section">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-7">
+                    <div class="col-md-5 text-left">
+                        <h1>Event name Event name Event name <span>16 +</span></h1>
+                        <span>by <a href="#">someone</a></span>
+                        <div>
+                            <span class="badge badge-pill badge-danger">Category</span>
+                            <span class="badge badge-pill badge-danger">Type</span>
+                        </div>
+                        <ul>
+                            <li>
+                                <span>
+                                    City
+                                </span>
+                            </li>
+                            <li>
+                                <span>
+                                    Place
+                                </span>
+                            </li>
+                            <li>
+                                <span>
+                                    20:30-23:30
+                                </span>
+                            </li>
+                            <li>
+                                <span>
+                                    4 to 8
+                                </span>
+                            </li>
+                            <li>
+                                <span>
+                                    100$
+                                </span>
+                            </li>
+                        </ul>
+
+                        <h3>Интересы</h3>
+                        <ul class="d-flex flex-wrap">
+                            <li>элемент 1</li>
+                            <li>элемент 1</li>
+                            <li>элемент 1</li>
+                            <li>элемент 1</li>
+                            <li>элемент 1</li>
+                            <li>элемент 1</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-7 mb-4">
                         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="10000">
                             <ol class="carousel-indicators">
                                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -73,44 +118,8 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-md-5 text-left">
-                        <h1>Event name</h1>
-                        
-                        <ul>
-                            <li>
-                                <span>
-                                    20:30-23:30
-                                </span>
-                            </li>
-                            <li>
-                                <span>
-                                    4 to 8
-                                </span>
-                            </li>
-                            <li>
-                                <span>
-                                    100$
-                                </span>
-                            </li>
-                        </ul>
-
-                        <form>
-                            <input /> 
-                            <div>date picker</div>
-                            <select>
-                                <option value="123">123</option>
-                                <option value="123">123</option>
-                                <option value="123">123</option>
-                                <option value="123">123</option>
-                            </select>
-                            <button type="submit">Подать заявку</button>
-                        </form>
-                    </div>
-                    <div class="col-md-5">
-
-                    </div>
-                    <div class="col-md-7">
-                        <h3>Описание</h3>
+                    <div class="col-md-8">
+                        <h3 class="text-left">Описание</h3>
                         <p class="text-left">
                             Welcome for a true GREEK FEAST!
                             We will make you discover the best of Greek gastronomy.
@@ -129,11 +138,37 @@
                             the Hill of Colonus is the Plato's Academy, a big park where the great philosopher taught.
                         </p>
                     </div>
+                    <div class="col-md-4">
+                        <div class="d-flex justify-content-center align-items-center h-100 p-4">
+                            <form class="w-100">
+                                <div class="form-group">
+                                    <label for="inlineFormCustomSelect">Date</label>
+                                    <select class="custom-select" name="" id="inlineFormCustomSelect">
+                                        <option selected>Select one</option>
+                                        <option value="">1</option>
+                                        <option value="">2</option>
+                                        <option value="">3</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleFormControlSelect2">Количество гостей</label>
+                                    <select class="custom-select" id="exampleFormControlSelect2">
+                                        <option value="123">1</option>
+                                        <option value="123">2</option>
+                                        <option value="123">3</option>
+                                        <option value="123">4</option>
+                                    </select>
+                                </div>
+                                <button class="btn" type="submit">Подать заявку</button>
+                            </form>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
         <section class="section">
-            <h2>Карта</h2>
+            <!-- <h2>Карта</h2> -->
+            <div id="map" class="w-100 map"></div>
         </section>
         <section class="section">
             <h2>Отзывы</h2>
@@ -255,8 +290,18 @@
 
     </footer>
     <!-- Footer -->
+    <script>
+    function initMap() {
+        // Create a map object and specify the DOM element for display.
+        var map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: 48.48001, lng: 135.07679},
+          zoom: 15
+        });
+    }
+    </script>
     <script src="/scripts/jquery/dist/jquery.min.js"></script>
     <script src="/scripts/bootstrap/js/bootstrap.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDg5JhEPxnNptYUXHzj9X6teceV0O2UfeU&callback=initMap" async defer></script>
 </body>
 
 </html>
