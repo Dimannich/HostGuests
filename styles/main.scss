@@ -4,6 +4,7 @@
 @import '../styles/vendors/font-awesome/scss/regular.scss';
 @import '../styles/vendors/font-awesome/scss/brands.scss';
 
+@import '../styles/helpers/variables';
 @import '../styles/base/normalize';
 
 @import '../styles/layout/header';
@@ -14,3 +15,4 @@
 @import '../styles/components/banner';
 @import '../styles/components/event-card';
 @import '../styles/components/event-carousel';
+@import '../styles/components/review';

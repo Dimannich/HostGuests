@@ -1,6 +1,15 @@
 .footer {
-    background-color: #22222a;
+    background-color: #293756;
     color: #fff;
     font-weight: 300;
     padding-top: 60px;
+
+    a {
+        color: white;
+        transition: color .2s ease;
+        
+        &:hover {
+            color: $primary-color;
+        }
+    }
 }

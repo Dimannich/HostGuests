@@ -1,0 +1,16 @@
+.event-review {
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, .1);
+
+    &__text {
+        color: $default-color;
+    }
+
+    &__header {
+        color: $primary-color;
+    }
+
+    &__icons {
+        color: $secondary-color;
+    }
+}

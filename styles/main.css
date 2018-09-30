@@ -14588,11 +14588,34 @@ h2 {
   margin-bottom: 1rem;
 }
 
+a {
+  color: #293756;
+}
+
+a:hover {
+  color: #fd668c;
+  text-decoration: none;
+}
+
+header .navbar {
+  background: #293756;
+}
+
 .footer {
-  background-color: #22222a;
+  background-color: #293756;
   color: #fff;
   font-weight: 300;
   padding-top: 60px;
+}
+
+.footer a {
+  color: white;
+  -webkit-transition: color .2s ease;
+  transition: color .2s ease;
+}
+
+.footer a:hover {
+  color: #fd668c;
 }
 
 .section {
@@ -14609,6 +14632,14 @@ main {
 
 .how-it-works__image {
   width: 100px;
+}
+
+.how-it-works__header {
+  color: #293756;
+}
+
+.how-it-works__text {
+  color: #293756;
 }
 
 .banner {
@@ -14628,12 +14659,27 @@ main {
 }
 
 .banner::before {
-  background-color: rgba(0, 0, 0, 0.37);
+  background-color: rgba(0, 0, 0, 0.47);
   content: '';
   display: block;
   height: 100%;
   position: absolute;
   width: 100%;
+}
+
+.event-card {
+  border-radius: 8px;
+  -webkit-box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1);
+  -webkit-transition: -webkit-box-shadow .2s ease;
+  transition: -webkit-box-shadow .2s ease;
+  transition: box-shadow .2s ease;
+  transition: box-shadow .2s ease, -webkit-box-shadow .2s ease;
+}
+
+.event-card:hover {
+  -webkit-box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2);
 }
 
 .event-card__host-img {
@@ -14646,6 +14692,50 @@ main {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+  -webkit-transition: -webkit-transform .3s ease;
+  transition: -webkit-transform .3s ease;
+  transition: transform .3s ease;
+  transition: transform .3s ease, -webkit-transform .3s ease;
+}
+
+.event-card__host-img:hover {
+  -webkit-transform: translateX(-50%) scale(1.05);
+          transform: translateX(-50%) scale(1.05);
+}
+
+.event-card__link {
+  -webkit-transition: color .15s ease;
+  transition: color .15s ease;
+}
+
+.event-card__name-link {
+  color: #fd668c;
+}
+
+.event-card__price {
+  font-size: 18px;
+  color: #293756;
+  font-weight: bold;
+}
+
+.event-card__price .fa-ruble-sign {
+  font-size: 16px;
+}
+
+.event-card__badge {
+  background: #3c61ae;
+  color: white;
+  font-size: 16px;
+}
+
+.event-card__badge-places {
+  position: absolute;
+  top: -35px;
+  right: 10px;
+  background: white;
+  font-size: 14px;
+  padding: 6px;
+  color: #293756;
 }
 
 #carouselExampleIndicators .list-inline {
@@ -14668,5 +14758,23 @@ main {
 
 #carouselExampleIndicators .carousel-indicators > li.active img {
   opacity: 0.5;
+}
+
+.event-review {
+  border-radius: 8px;
+  -webkit-box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.1);
+}
+
+.event-review__text {
+  color: #293756;
+}
+
+.event-review__header {
+  color: #fd668c;
+}
+
+.event-review__icons {
+  color: #3c61ae;
 }
 /*# sourceMappingURL=main.css.map */

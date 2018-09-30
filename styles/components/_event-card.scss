@@ -1,4 +1,16 @@
 .event-card {
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1);
+    transition: box-shadow .2s ease;
+
+    &:hover {
+        box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2);
+    }
+
+    &__img {
+       
+    }
+
     &__host-img {
         width: 70px;
         height: 70px;
@@ -8,5 +20,44 @@
         top: -35px;
         left: 50%;
         transform: translateX(-50%);
+        transition: transform .3s ease;
+
+        &:hover {
+            transform: translateX(-50%) scale(1.05);
+        }
+    }
+
+    &__link {
+        transition: color .15s ease;
+    }
+
+    &__name-link {
+        color: $primary-color;
+    }
+
+    &__price {
+        font-size: 18px;
+        color: $default-color;
+        font-weight: bold;
+
+        .fa-ruble-sign {
+            font-size: 16px;
+        }
+    }
+
+    &__badge {
+        background: $secondary-color;
+        color: white;
+        font-size: 16px;
+
+        &-places {
+            position: absolute;
+            top: -35px;
+            right: 10px;
+            background: white;
+            font-size: 14px;
+            padding: 6px;
+            color: $default-color;
+        }
     }
 }
