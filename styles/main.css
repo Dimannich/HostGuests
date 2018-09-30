@@ -14630,6 +14630,46 @@ main {
   height: 60vh;
 }
 
+.event-main-points {
+  list-style-type: none;
+  font-size: 18px;
+}
+
+.event-main-points__city {
+  margin-left: 8px;
+}
+
+.event-main-points__place {
+  margin-left: 8px;
+}
+
+.event-main-points__time {
+  margin-left: 8px;
+}
+
+.event-main-points__people {
+  margin-left: 5px;
+}
+
+.event-main-points__cost {
+  margin-left: 12px;
+}
+
+.event-main-points i {
+  color: #fd668c;
+}
+
+.event-person-link {
+  color: #fd668c;
+  font-size: 20px;
+}
+
+.event-register {
+  border-radius: 8px;
+  -webkit-box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.1);
+}
+
 .how-it-works__image {
   width: 100px;
 }
@@ -14738,26 +14778,38 @@ main {
   color: #293756;
 }
 
-#carouselExampleIndicators .list-inline {
+.event-carousel .list-inline {
   white-space: nowrap;
   overflow-x: auto;
 }
 
-#carouselExampleIndicators .carousel-indicators {
+.event-carousel .carousel-indicators {
   position: static;
   margin: 0;
   height: 160px;
   display: block;
 }
 
-#carouselExampleIndicators .carousel-indicators > li {
+.event-carousel .carousel-indicators > li {
   width: 200px;
   text-indent: initial;
   margin: 0 4px;
 }
 
-#carouselExampleIndicators .carousel-indicators > li.active img {
-  opacity: 0.5;
+.event-carousel .carousel-indicators > li.active img {
+  opacity: .6;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.event-carousel .carousel-control-prev,
+.event-carousel .carousel-control-next {
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+}
+
+.event-carousel .carousel-control-prev:hover,
+.event-carousel .carousel-control-next:hover {
+  background: rgba(0, 0, 0, 0.05);
 }
 
 .event-review {
@@ -14776,5 +14828,25 @@ main {
 
 .event-review__icons {
   color: #3c61ae;
+}
+
+.interests-list {
+  list-style-type: none;
+}
+
+.interests-list__item {
+  font-size: 16px;
+  margin: 0 12px;
+}
+
+.btn-default {
+  background: #3c61ae;
+  color: white;
+  -webkit-transition: background .2s ease;
+  transition: background .2s ease;
+}
+
+.btn-default:hover {
+  background: #fd668c;
 }
 /*# sourceMappingURL=main.css.map */

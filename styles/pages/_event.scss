@@ -1,0 +1,38 @@
+.event-main-points {
+    list-style-type: none;
+    font-size: 18px;
+
+    &__city {
+        margin-left: 8px;
+    }
+
+    &__place {
+        margin-left: 8px;
+    }
+
+    &__time {
+        margin-left: 8px;
+    }
+
+    &__people {
+        margin-left: 5px;
+    }
+
+    &__cost {
+        margin-left: 12px;
+    }
+
+    i {
+        color: $primary-color;
+    }
+}
+
+.event-person-link {
+    color: $primary-color;
+    font-size: 20px;
+}
+
+.event-register {
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.1);
+}
