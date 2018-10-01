@@ -36,3 +36,16 @@
     border-radius: 8px;
     box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.1);
 }
+
+.event-label {
+    border: 1px solid $secondary-color;
+    border-radius: 50%;
+    font-size: 18px;
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    vertical-align: middle;
+    line-height: 36px;
+    text-align: center;
+    color: $secondary-color;
+}

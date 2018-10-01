@@ -5,129 +5,260 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="#3b0d70" />
     <link rel="stylesheet" href="styles/main.css">
     <title>Document</title>
 </head>
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-            <a class="navbar-brand" href="#">Navbar</a>
-            <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
-                aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
-                <i class="fas fa-list"></i>
-            </button>
-            <div class="collapse navbar-collapse" id="collapsibleNavId">
-                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false">Dropdown</a>
-                        <div class="dropdown-menu" aria-labelledby="dropdownId">
-                            <a class="dropdown-item" href="#">Action 1</a>
-                            <a class="dropdown-item" href="#">Action 2</a>
-                        </div>
-                    </li>
-                </ul>
-                <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="text" placeholder="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                </form>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
+                    aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-list"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavId">
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Главная <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Поиск</a>
+                        </li>
+                        <!-- <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownId">
+                                <a class="dropdown-item" href="#">Action 1</a>
+                                <a class="dropdown-item" href="#">Action 2</a>
+                            </div>
+                        </li> -->
+                    </ul>
+                </div>
             </div>
         </nav>
     </header>
     <main class="text-center">
-        <section class="section">
-            <h2>Набор событий 1</h2>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4 mb-3">
-                        <div class="card event-card">
-                            <a href="#">
-                                <img class="card-img-top" src="assets/img/img-holder.webp" alt="">
-                            </a>
-                            <div class="card-body position-relative pt-5">
-                                <a href="#">
-                                    <img class="event-card__host-img" src="assets/img/img-holder.webp">
-                                </a>
-                                <a href="#">
-                                    <h4 class="card-title">Title</h4>
-                                </a>
-                                <span class="badge badge-pill badge-danger">Category</span>
-                                <p class="card-text">Hosted by <a href="#">Name</a></p>
-                                <span>100$</span>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <form class="search-form" action="" method="POST">
+                        <h1 class="text-left mb-4">Поиск событий</h1>
+                        <div class="row">
+                            <div class="col-md-3 mb-3">
+                                <select class="custom-select">
+                                    <option selected>Open this select menu</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                             <div class="col-md-3 mb-3">
+                                <select class="custom-select">
+                                    <option selected>Open this select menu</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                             <div class="col-md-3 mb-3">
+                                <select class="custom-select">
+                                    <option selected>Open this select menu</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                            <div class="col-md-9">
+                                <label class="sr-only" for="inlineFormInputName2">Name</label>
+                                <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2"
+                                    placeholder="Поиск по названию">
+                            </div>
+                            <div class="col-md-3">
+                                <div class="d-flex mt-3 mt-md-0">
+                                    <button class="btn search-form__btn-clear col mr-3" type="submit">Сбросить</button>
+                                    <button class="btn search-form__btn-confirm col" type="submit">Показать</button>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-4 mb-3">
-                        <div class="card text-white bg-link">
-                            <img class="card-img-top" src="assets/img/img-holder.webp" alt="">
-                            <div class="card-body">
-                                <h4 class="card-title">Title</h4>
-                                <p class="card-text">Text</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="result">
+            <section class="section">
+                <h2>Popular events</h2>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4 mb-3">
+                            <div class="card event-card">
+                                <a href="#">
+                                    <img class="card-img-top event-card__img" src="assets/img/img-holder.webp" alt="">
+                                </a>
+                                <div class="card-body position-relative pt-5">
+                                    <span class="badge event-card__badge-places">0 из 16</span>
+                                    <a href="#">
+                                        <img class="event-card__host-img" alt="" src="assets/img/img-holder.webp">
+                                    </a>
+                                    <a class="event-card__link" href="#">
+                                        <h4 class="card-title event-card__title">Lorem ipsum dolor sit amet,
+                                            consectetur
+                                            adipiscing elit</h4>
+                                    </a>
+                                    <a href="#">
+                                        <span class="badge event-card__badge">Category</span>
+                                    </a>
+                                    <p class="card-text event-card__text mt-2">
+                                        Hosted by
+                                        <a class="event-card__name-link" href="#">Name</a>
+                                    </p>
+                                    <span class="event-card__price">100 <i class="fas fa-ruble-sign    "></i></span>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-4 mb-3">
-                        <div class="card text-white bg-link">
-                            <img class="card-img-top" src="assets/img/img-holder.webp" alt="">
-                            <div class="card-body">
-                                <h4 class="card-title">Title</h4>
-                                <p class="card-text">Text</p>
+                        <div class="col-md-4 mb-3">
+                            <div class="card event-card">
+                                <a href="#">
+                                    <img class="card-img-top event-card__img" src="assets/img/img-holder.webp" alt="">
+                                </a>
+                                <div class="card-body position-relative pt-5">
+                                    <span class="badge event-card__badge-places">0 из 16</span>
+                                    <a href="#">
+                                        <img class="event-card__host-img" alt="" src="assets/img/img-holder.webp">
+                                    </a>
+                                    <a class="event-card__link" href="#">
+                                        <h4 class="card-title event-card__title">Lorem ipsum dolor sit amet,
+                                            consectetur
+                                            adipiscing elit</h4>
+                                    </a>
+                                    <a href="#">
+                                        <span class="badge event-card__badge">Category</span>
+                                    </a>
+                                    <p class="card-text event-card__text mt-2">
+                                        Hosted by
+                                        <a class="event-card__name-link" href="#">Name</a>
+                                    </p>
+                                    <span class="event-card__price">100 <i class="fas fa-ruble-sign    "></i></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <div class="card event-card">
+                                <a href="#">
+                                    <img class="card-img-top event-card__img" src="assets/img/img-holder.webp" alt="">
+                                </a>
+                                <div class="card-body position-relative pt-5">
+                                    <span class="badge event-card__badge-places">0 из 16</span>
+                                    <a href="#">
+                                        <img class="event-card__host-img" alt="" src="assets/img/img-holder.webp">
+                                    </a>
+                                    <a class="event-card__link" href="#">
+                                        <h4 class="card-title event-card__title">Lorem ipsum dolor sit amet,
+                                            consectetur
+                                            adipiscing elit</h4>
+                                    </a>
+                                    <a href="#">
+                                        <span class="badge event-card__badge">Category</span>
+                                    </a>
+                                    <p class="card-text event-card__text mt-2">
+                                        Hosted by
+                                        <a class="event-card__name-link" href="#">Name</a>
+                                    </p>
+                                    <span class="event-card__price">100 <i class="fas fa-ruble-sign    "></i></span>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <section class="section">
-            <h2>Набор событий 2</h2>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4 mb-3">
-                        <div class="card event-card">
-                            <a href="#">
-                                <img class="card-img-top" src="assets/img/img-holder.webp" alt="">
-                            </a>
-                            <div class="card-body position-relative pt-5">
+            </section>
+            <section class="section">
+                <h2>Popular events</h2>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4 mb-3">
+                            <div class="card event-card">
                                 <a href="#">
-                                    <img class="event-card__host-img" src="assets/img/img-holder.webp">
+                                    <img class="card-img-top event-card__img" src="assets/img/img-holder.webp" alt="">
                                 </a>
-                                <a href="#">
-                                    <h4 class="card-title">Title</h4>
-                                </a>
-                                <span class="badge badge-pill badge-danger">Category</span>
-                                <p class="card-text">Hosted by <a href="#">Name</a></p>
-                                <span>100$</span>
+                                <div class="card-body position-relative pt-5">
+                                    <span class="badge event-card__badge-places">0 из 16</span>
+                                    <a href="#">
+                                        <img class="event-card__host-img" alt="" src="assets/img/img-holder.webp">
+                                    </a>
+                                    <a class="event-card__link" href="#">
+                                        <h4 class="card-title event-card__title">Lorem ipsum dolor sit amet,
+                                            consectetur
+                                            adipiscing elit</h4>
+                                    </a>
+                                    <a href="#">
+                                        <span class="badge event-card__badge">Category</span>
+                                    </a>
+                                    <p class="card-text event-card__text mt-2">
+                                        Hosted by
+                                        <a class="event-card__name-link" href="#">Name</a>
+                                    </p>
+                                    <span class="event-card__price">100 <i class="fas fa-ruble-sign    "></i></span>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-4 mb-3">
-                        <div class="card text-white bg-link">
-                            <img class="card-img-top" src="assets/img/img-holder.webp" alt="">
-                            <div class="card-body">
-                                <h4 class="card-title">Title</h4>
-                                <p class="card-text">Text</p>
+                        <div class="col-md-4 mb-3">
+                            <div class="card event-card">
+                                <a href="#">
+                                    <img class="card-img-top event-card__img" src="assets/img/img-holder.webp" alt="">
+                                </a>
+                                <div class="card-body position-relative pt-5">
+                                    <span class="badge event-card__badge-places">0 из 16</span>
+                                    <a href="#">
+                                        <img class="event-card__host-img" alt="" src="assets/img/img-holder.webp">
+                                    </a>
+                                    <a class="event-card__link" href="#">
+                                        <h4 class="card-title event-card__title">Lorem ipsum dolor sit amet,
+                                            consectetur
+                                            adipiscing elit</h4>
+                                    </a>
+                                    <a href="#">
+                                        <span class="badge event-card__badge">Category</span>
+                                    </a>
+                                    <p class="card-text event-card__text mt-2">
+                                        Hosted by
+                                        <a class="event-card__name-link" href="#">Name</a>
+                                    </p>
+                                    <span class="event-card__price">100 <i class="fas fa-ruble-sign    "></i></span>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-4 mb-3">
-                        <div class="card text-white bg-link">
-                            <img class="card-img-top" src="assets/img/img-holder.webp" alt="">
-                            <div class="card-body">
-                                <h4 class="card-title">Title</h4>
-                                <p class="card-text">Text</p>
+                        <div class="col-md-4 mb-3">
+                            <div class="card event-card">
+                                <a href="#">
+                                    <img class="card-img-top event-card__img" src="assets/img/img-holder.webp" alt="">
+                                </a>
+                                <div class="card-body position-relative pt-5">
+                                    <span class="badge event-card__badge-places">0 из 16</span>
+                                    <a href="#">
+                                        <img class="event-card__host-img" alt="" src="assets/img/img-holder.webp">
+                                    </a>
+                                    <a class="event-card__link" href="#">
+                                        <h4 class="card-title event-card__title">Lorem ipsum dolor sit amet,
+                                            consectetur
+                                            adipiscing elit</h4>
+                                    </a>
+                                    <a href="#">
+                                        <span class="badge event-card__badge">Category</span>
+                                    </a>
+                                    <p class="card-text event-card__text mt-2">
+                                        Hosted by
+                                        <a class="event-card__name-link" href="#">Name</a>
+                                    </p>
+                                    <span class="event-card__price">100 <i class="fas fa-ruble-sign    "></i></span>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
+        </div>
     </main>
     <!-- Footer -->
     <footer class="page-footer font-small indigo footer">
@@ -142,8 +273,6 @@
             <div class="row text-center text-md-left mb-3">
 
                 <!-- Grid column -->
-
-                <hr class="w-100 clearfix d-md-none">
 
                 <!-- Grid column -->
                 <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
@@ -209,27 +338,27 @@
                 <div class="col-md-12">
                     <div class="text-center my-4">
                         <!-- Facebook -->
-                        <a class="fb-ic">
+                        <a href="#" class="fb-ic">
                             <i class="fab fa-facebook-f fa-lg white-text mr-4"> </i>
                         </a>
                         <!-- Twitter -->
-                        <a class="tw-ic">
+                        <a href="#" class="tw-ic">
                             <i class="fab fa-twitter fa-lg white-text mr-4"> </i>
                         </a>
                         <!-- Google +-->
-                        <a class="gplus-ic">
+                        <a href="#" class="gplus-ic">
                             <i class="fab fa-google-plus fa-lg white-text mr-4"> </i>
                         </a>
                         <!--Linkedin -->
-                        <a class="li-ic">
+                        <a href="#" class="li-ic">
                             <i class="fab fa-linkedin fa-lg white-text mr-4"> </i>
                         </a>
                         <!--Instagram-->
-                        <a class="ins-ic">
+                        <a href="#" class="ins-ic">
                             <i class="fab fa-instagram fa-lg white-text mr-4"> </i>
                         </a>
                         <!--Pinterest-->
-                        <a class="pin-ic">
+                        <a href="#" class="pin-ic">
                             <i class="fab fa-pinterest fa-lg white-text"> </i>
                         </a>
                     </div>

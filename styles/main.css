@@ -14599,6 +14599,92 @@ a:hover {
 
 header .navbar {
   background: #293756;
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+header .navbar-toggler:focus {
+  outline: none;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1031;
+  background-color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  display: none;
+}
+
+.overlay.visible {
+  display: block;
+}
+
+#nav-icon3 {
+  width: 40px;
+  height: 30px;
+  position: relative;
+  margin: auto;
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  cursor: pointer;
+  z-index: 1041;
+}
+
+#nav-icon3 span {
+  display: block;
+  position: absolute;
+  height: 5px;
+  width: 100%;
+  background: #fd668c;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
+}
+
+#nav-icon3 span:nth-child(1) {
+  top: 0px;
+}
+
+#nav-icon3 span:nth-child(2), #nav-icon3 span:nth-child(3) {
+  top: 12px;
+}
+
+#nav-icon3 span:nth-child(4) {
+  top: 24px;
+}
+
+#nav-icon3.open span:nth-child(1) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
+
+#nav-icon3.open span:nth-child(2) {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+#nav-icon3.open span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+#nav-icon3.open span:nth-child(4) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
 }
 
 .footer {
@@ -14668,6 +14754,19 @@ main {
   border-radius: 8px;
   -webkit-box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.1);
+}
+
+.event-label {
+  border: 1px solid #3c61ae;
+  border-radius: 50%;
+  font-size: 18px;
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  vertical-align: middle;
+  line-height: 36px;
+  text-align: center;
+  color: #3c61ae;
 }
 
 .how-it-works__image {
@@ -14849,5 +14948,70 @@ main {
 
 .btn-default:hover {
   background: #fd668c;
+}
+
+.search-form {
+  padding: 70px 0 100px 0;
+}
+
+@media (max-width: 767px) {
+  .search-form {
+    padding: 30px 0 50px 0;
+  }
+}
+
+.search-form__btn-clear {
+  background: #293756;
+  color: white;
+}
+
+.search-form__btn-confirm {
+  background: #fd668c;
+  color: white;
+}
+
+.side-nav {
+  position: fixed;
+  width: 75vw;
+  max-width: 260px;
+  right: 0;
+  top: 0;
+  margin: 0;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: -webkit-transform .3s ease;
+  transition: -webkit-transform .3s ease;
+  transition: transform .3s ease;
+  transition: transform .3s ease, -webkit-transform .3s ease;
+  height: 100%;
+  background-color: #293756;
+  z-index: 1040;
+  -webkit-backface-visibility: hidden;
+  overflow: hidden;
+  will-change: transform;
+  backface-visibility: hidden;
+  padding: 0;
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+.side-nav__logo-wrapper {
+  width: 200px;
+}
+
+.side-nav__link {
+  color: white;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.side-nav__link:hover {
+  background: #fd668c;
+  color: white;
+}
+
+.side-nav.active {
+  -webkit-transform: translateX(0px);
+          transform: translateX(0px);
 }
 /*# sourceMappingURL=main.css.map */
